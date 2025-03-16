@@ -17,7 +17,7 @@ def main() -> None:
     sniff(
         prn=sniffing_firewall,
         iface=iface,
-        filter='tcp port 80',
+        filter='port 8000',
         session=TCPSession
     )
 
